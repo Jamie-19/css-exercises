@@ -10,6 +10,12 @@
 
 .menu-title {
   background-color: rgb(163, 162, 162);
+  transition:transform 0.5s ease-in-out;
+}
+
+.menu-title:hover {
+  background-color: rgb(47, 46, 46);
+  transform:scale(1.1);
 }
 
 .dropdown-menu {
@@ -17,12 +23,12 @@
   padding: 0;
   margin: 0;
   background-color: rgb(99, 97, 97);
-
   display: none;
 }
 
 ul.dropdown-menu li:hover {
   background: rgb(47, 46, 46);
+  transform:scale(1.1);
 }
 
 .visible {
@@ -30,3 +36,21 @@ ul.dropdown-menu li:hover {
 }
 
 
+.visible {
+  animation: expand 500ms ease-in-out;
+  transform-origin: top;
+}
+
+@keyframes expand {
+  0% {
+    transform: scaleY(0);
+  }
+
+  70% {
+    transform: scaleY(1.1);
+  }
+  
+  100% {
+    transform: scaleY(1);
+  }
+}
