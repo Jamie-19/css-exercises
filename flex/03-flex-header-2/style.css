@@ -19,16 +19,10 @@ body {
   margin:10px;
 }
 
-.logos-link{
+.logos-link,.noti-img{
   display: flex;
   align-items: center;
   gap: 16px;
-}
-
-.noti-img{
-  display: flex;
-  align-items: center;
-  gap:10px;
 }
 
 .profile-image {
