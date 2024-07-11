@@ -6,21 +6,22 @@ body {
   min-height: 100vh;
 }
 
-.container{
-  display: flex;
-  gap: 20px;
-  height: 477px;
-}
-
 .header {
   display: flex;
   align-items: center;
-  font-weight:bolder;
+  padding: 0 16px;
+  font-weight:900;
   font-size: 32px;
   height: 72px;
   background: darkmagenta;
   color: white;
 }
+
+.container{
+  flex:1;
+  display: flex;
+}
+
 
 .footer {
   display: flex;
@@ -37,29 +38,41 @@ body {
 }
 
 .sidebar {
-  height: 100%;
-  width: auto;
+  width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 16px;
 }
-
 
 .card {
-  margin: 5px;
-  padding: 10px;
-  height: 90%;
-  width: 90%;
-  border: 5px;
-  box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
+  border: 1px solid #eee;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  padding: 16px;
+  width: 300px;
 }
+
 .card-grid{
-  display: grid;
-  grid-template: repeat(2, 3fr) / repeat(3, 2fr);
-  gap: 20px;
+  padding: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
 
 }
-li{
-  list-style: none;
-  padding: 10px;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
 }
