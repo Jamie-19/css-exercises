@@ -12,6 +12,8 @@ img {
 }
 
 button {
+  display: inline-block;
+  padding: 5px;
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
@@ -23,4 +25,74 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+.header,.footer,.content,.left-links,.right-links{
+  display:flex;
+}
+
+.header,.footer,.content{
+  justify-content: center;
+  align-items: center;
+}
+
+
+.header,.footer{
+  position: fixed;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.header{
+  top:0;
+
+}
+
+.footer{
+  bottom: 0;
+  background-color: #f1f1f1;
+}
+
+.content{
+  flex-direction:column;
+  gap:20px;
+  height: 100%;
+}
+
+.left-links,.right-links{
+  gap:16px;
+  width:50%;
+}
+
+.left-links{
+  justify-content: flex-start;
+  margin-left:-20px;
+}
+
+.right-links{
+  justify-content: flex-end;
+  margin-right:15px;
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #f1f1f1;
+  height: 40px;
+
+}
+
+
+li{
+  list-style-type: none;
+}
+
+
+a{
+  text-decoration: none;
+  color: #000;
 }
