@@ -20,7 +20,36 @@ button {
 }
 
 button:hover {
-  
   transform:scale(1.2);
-  
+}
+@keyframes showup{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes slidein{
+  from{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.anime{
+  display: flex;
+  align-items: center;
+}
+.first{
+  animation: showup 7s ease-in-out infinite;
+}
+.rest{
+  animation: slidein 5s ease-in-out infinite;
+  animation-fill-mode: forwards;
 }
